@@ -17,6 +17,7 @@ function Header() {
     headerDiv.classList.add('header');
   const headerSpan1 = document.createElement('span');
     headerSpan1.classList.add('date');
+        headerSpan1.textContent = "MARCH 28, 2019";
   const headerH1 = document.createElement('h1');
       headerH1.textContent = "Lambda School";
   const headerSpan2 = document.createElement('span');
