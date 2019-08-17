@@ -18,8 +18,6 @@
   </div>
 */
 
-
-
 function carousel(){
 
   const carouselDiv = document.createElement('div');
@@ -30,8 +28,8 @@ function carousel(){
     rightBtn.classList.add('right-button');
 
   const images = [];
-  for(let i = 0; i < 4; i++) {
-    images.push(document.createElement('img'));
+    for(let i = 0; i < 4; i++) {
+      images.push(document.createElement('img'));
   }
 
   images[0].src = "./assets/carousel/mountains.jpeg";
@@ -42,15 +40,17 @@ function carousel(){
   carouselDiv.appendChild(leftBtn);
   carouselDiv.appendChild(rightBtn);
 
-const containerCarousel = document.querySelector('.carousel-container');
+  const containerCarousel = document.querySelector('.carousel-container');
 
   containerCarousel.appendChild(carouselDiv);
 
   images.forEach(c => carouselDiv.appendChild(c));
+
+  leftBtn.addEventListener('click', (event) => {
+    // event.target.style.backgroundColor = 'red';
+    })
   
-
-
- return carouselDiv; 
+  return carouselDiv; 
 
 }
 
